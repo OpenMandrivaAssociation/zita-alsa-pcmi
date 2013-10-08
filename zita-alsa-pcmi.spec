@@ -1,6 +1,8 @@
 %define	major	0
 %define	libname	%mklibname %{name} %{major}
 %define	develname %mklibname %{name} -d
+#empty debug
+%define debug_package	%{nil}
 
 Name:		zita-alsa-pcmi
 Summary:	Provides easy access to ALSA PCM devices
@@ -9,6 +11,7 @@ Release:	2
 License:	GPLv3
 Group:		System/Libraries 
 Source0:	http://kokkinizita.linuxaudio.org/linuxaudio/downloads/%{name}-%{version}.tar.bz2
+Source100:	%{name}.rpmlintrc
 URL:		http://kokkinizita.linuxaudio.org/linuxaudio/
 
 BuildRequires:	ecasound-devel
@@ -62,6 +65,5 @@ cd libs
 %install
 cd libs
 %makeinstall PREFIX=%{buildroot}%{_prefix}
-
 
 
