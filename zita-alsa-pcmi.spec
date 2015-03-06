@@ -1,3 +1,5 @@
+%define debug_package	%{nil}
+
 %define	major	0
 %define	libname	%mklibname %{name} %{major}
 %define	develname %mklibname %{name} -d
@@ -24,7 +26,7 @@ floating point audio data.
 %package -n %{libname}
 Group:		System/Libraries
 Summary:	Libraries for %{name}
-Provides:	lib%{name} = %{version}-%{release}
+Provides:	lib%{name} = %{EVRD}
 Obsoletes:	%{_lib}clalsadrv2 < 2.0.1
 
 %description -n	%{libname}
@@ -38,8 +40,8 @@ The libraries from %{name} package needed by Aeolus
 %package -n %{develname}
 Group:		Development/Other
 Summary:	Libraries for %name
-Requires:	%{libname} = %{version}-%{release}
-Provides:	%{name}-devel = %{version}-%{release}
+Requires:	%{libname} = %{EVRD}
+Provides:	%{name}-devel = %{EVRD}
 Obsoletes:	%{_lib}clalsadrv-devel < 2.0.1
 
 %description -n	%{develname}
