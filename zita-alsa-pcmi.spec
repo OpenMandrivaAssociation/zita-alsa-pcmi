@@ -6,8 +6,8 @@
 
 Name:		zita-alsa-pcmi
 Summary:	Provides easy access to ALSA PCM devices
-Version:	0.2.0
-Release:	2
+Version:	0.5.1
+Release:	1
 License:	GPLv3
 Group:		System/Libraries 
 Source0:	http://kokkinizita.linuxaudio.org/linuxaudio/downloads/%{name}-%{version}.tar.bz2
