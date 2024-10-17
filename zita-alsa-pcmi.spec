@@ -11,7 +11,7 @@ Release:	1
 License:	GPLv3
 Group:		System/Libraries 
 Source0:	http://kokkinizita.linuxaudio.org/linuxaudio/downloads/%{name}-%{version}.tar.bz2
-URL:		http://kokkinizita.linuxaudio.org/linuxaudio/
+URL:		https://kokkinizita.linuxaudio.org/linuxaudio/
 
 BuildRequires:	ecasound-devel
 
