@@ -13,6 +13,7 @@ Group:		System/Libraries
 Source0:	http://kokkinizita.linuxaudio.org/linuxaudio/downloads/%{name}-%{version}.tar.bz2
 URL:		https://kokkinizita.linuxaudio.org/linuxaudio/
 
+BuildRequires:	make
 BuildRequires:	ecasound-devel
 
 %description
